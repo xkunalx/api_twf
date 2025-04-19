@@ -41,7 +41,7 @@ def calculate_total_cost(order):
 
     return total_cost
 
-@app.route('/v1/api/calculate', methods=['POST'])
+@app.route('/calculate', methods=['POST'])
 def calculate():
     order = request.get_json()
     if not order:
